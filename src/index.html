@@ -17,7 +17,7 @@
       method="post"
       autocomplete="off"
     >
-      <fieldset class="personal-info">
+      <fieldset class="part-form personal-info">
         <legend>Personal information</legend>
         <div class="form-field">
           <label for="surname">Surname:</label>
@@ -47,7 +47,7 @@
         >
         </div>
         <div class="form-field">
-          <label for="birth">Full date of birth</label>
+          <label for="birth">Full date of birth:</label>
           <input
             type="date"
             name="birth-input"
@@ -55,7 +55,7 @@
             value=""
         >
         </div>
-        <div class="form-field">
+        <div class="form-field term-accept">
           <label for="term">I accept the term of the agreement</label>
           <input
             type="checkbox"
@@ -64,10 +64,10 @@
         >
         </div>
       </fieldset>
-      <fieldset class="registartion-field">
-        <legend>Registartion</legend>
+      <fieldset class="part-form registartion-field">
+        <legend>Registration</legend>
         <div class="form-field">
-          <label for="email">Email:</label>
+          <label for="email">E-mail:</label>
           <input
             type="email"
             placeholder="email@example.com"
@@ -75,7 +75,7 @@
             id="email"
         >
         </div>
-        <div class="form-field">
+        <div class="form-field password-input-field">
           <label for="password-input">Password:</label>
           <input
             type="password"
@@ -84,8 +84,8 @@
         >
         </div>
       </fieldset>
-      <fieldset>
-        <legend>An interesting facts about you!</legend>
+      <fieldset class="part-form user-info">
+        <legend>An interesting fact about you!</legend>
         <div class="form-field">Do you love cats?
           <label for="radio-yes">
             <input
@@ -105,7 +105,7 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="color-input">What is your favourite color?
+          <label for="color-input">What is your favorite color?
             <input
             type="color"
             name="color"
@@ -124,7 +124,7 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="car-brend">What are your favourite brand of cars?
+          <label for="car-brend">What are your favorite brand of cars?
             <select
               name="cars"
               id="car-brend"
@@ -136,8 +136,8 @@
             </select>
           </label>
         </div>
-        <div class="form-field">
-          <label for="rate-work">What do you rate our work?
+        <div class="form-field rate-choose">
+          <label for="rate-work">How do you rate our work?
             <input
               type="range"
               name="rate-work-input"
@@ -147,7 +147,7 @@
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="part-form feedback-form">
         <legend>Additional info</legend>
         <div class="form-field">
           <label for="comments-input">Comments:
@@ -160,7 +160,7 @@
             </textarea>
           </label>
         </div>
-        <div class="form-field">
+        <div class="form-field feedback">
           <label for="feedback-question">Would you recommended us?
             <select name="question" id="feedback-question">
               <option value="Yes">Yes</option>
@@ -169,7 +169,7 @@
           </label>
         </div>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
